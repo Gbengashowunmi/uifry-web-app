@@ -1,0 +1,92 @@
+// variables
+@import "../../SassConfig//variables.scss";
+.main_container {
+  margin-bottom: 2rem;
+  .component {
+    display: flex;
+    margin: auto;
+  }
+}
+.main {
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 0 0 2.5rem;
+
+  .left_section_main {
+    width: 50%;
+    height: fit-content;
+    h2 {
+      font-size: 5vw;
+      color: $myMainTextColor;
+      margin-bottom: 1rem;
+    }
+    .scan_instruction {
+      color: black;
+      font-size: 1.8vw;
+      margin-bottom: 1rem;
+    }
+    span {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      gap: 0.5rem;
+      color: $myFaintTextColor;
+      margin-bottom: 1rem;
+      font-size: 2vw;
+      h3 {
+        color: $myTextColor;
+        font-weight: 800;
+      }
+    }
+  }
+  .right_section_main {
+    width: 45%;
+    height: fit-content;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 790px) {
+  .main {
+    flex-direction: column;
+    text-align: center;
+  padding: 3rem 0 0 0rem;
+    .left_section_main {
+      width: 100%;
+      margin-bottom: 3rem;
+      h2 {
+        font-size: 9vw;
+      }
+      .scan_instruction {
+        font-size: 4vw;
+      }
+      span {
+        font-size: 4vw;
+      justify-content: center;
+
+      }
+    }
+    .right_section_main {
+      width: 90%;
+      height: fit-content;
+      margin-bottom: 3rem;
+      margin: auto;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  .component {
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+  }
+}
