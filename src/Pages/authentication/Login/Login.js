@@ -3,22 +3,26 @@ import "./login.scss";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
+import AuthenticationParent from "../AuthenticationParent";
 
 export default function Login() {
   return (
-    <div className="login">
+    <AuthenticationParent>
+    <div className="login_signup_forgot_password">
 
       <h3>Login</h3>
-      <p>Securely login to your PiggyVest</p>
+      <p>Securely login to your Uifry</p>
       <form className="form">
-        <TextField id="standard-basic" label="Username" variant="standard" />
-        <TextField id="standard-basic" label="Password" variant="standard" />
+        <TextField id="standard-basic" label="Username" variant="standard" margin="normal" />
+        <TextField id="standard-basic" label="Password" variant="standard" margin="normal" />
+       <Link to='/dashboard'>
         <Button className="button">Login</Button>
+        </Link>
       </form>
       <p className="account">
-        Don't have an account?
+        Don't have an account? 
         <strong>
-          <Link to="/signup">Register</Link>
+          <Link to="/signup"> Register</Link>
         </strong>
       </p>
       <Link to="/forgot_password">
@@ -27,5 +31,6 @@ export default function Login() {
         </p>
       </Link>
     </div>
+    </AuthenticationParent>
   );
 }
