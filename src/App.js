@@ -5,7 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import Login from "./Pages/authentication/Login/Login";
 import SignUp from "./Pages/authentication/Signup/SignUp";
 import ForgotPassword from "./Pages/authentication/ForgotPassword/ForgotPassword";
-import Dashboard from "./Pages/Dashboard/Dashboard";
+// import Dashboard from "./Pages/Dashboard/Dashboard";
 import ProfileSettings from "./components/MyAccount/ProfileSettings/ProfileSettings";
 import NextOfKin from "./components/MyAccount/NextOfKin/NextOfKin";
 import SecurityQuestion from "./components/MyAccount/SecurityQuestion/SecurityQuestion";
@@ -27,7 +27,7 @@ function App() {
         <Route path="login" element={<Login />} />
         <Route path="signup" element={<SignUp />} />
         <Route path="forgot_password" element={<ForgotPassword />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        {/* <Route path="/dashboard/profile_settings" element={<Dashboard />} /> */}
         <Route path="/dashboard/profile_settings" element={<ProfileSettings />} />
         <Route path="/dashboard/faq" element={<SecurityQuestion/>} />
         <Route path="/dashboard/notification_settings" element={<NotificationSettings/>} />

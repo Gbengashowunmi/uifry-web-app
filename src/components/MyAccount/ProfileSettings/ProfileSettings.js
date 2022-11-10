@@ -7,7 +7,7 @@ export default function ProfileSettings() {
   return (
     <Dashboard>
       <div className="profile_settings">
-        <h3 className="heading">Basic data</h3>
+        <h4 className="heading">Basic data</h4>
         <p>Change Your Profile Picture</p>
         <div className="image_container">
           <img src="/images/user_image.jpg" alt="user_image" />
