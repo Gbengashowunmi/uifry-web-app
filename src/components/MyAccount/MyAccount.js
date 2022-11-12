@@ -1,36 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import GeneralDashboard from "../../Pages/GeneralDashboard/GeneralDashboard";
 import "../MyAccount/MyAccount.scss";
 
-export default function MyAccount() {
-  // const [active, setActive] = useState(1);
-  // const [profile, setProfile] = useState(true);
-  // const [security, setSecurity] = useState(false);
-  // const [notification, setNotification] = useState(false);
-  // const [kin, setKin] = useState(false);
-  // const [interest, setInterest] = useState(false);
-  // const [password, setPassword] = useState(false);
-  // const [bvn, setBvn] = useState(false);
-  // const [kyc, setKyc] = useState(false);
-
+export default function MyAccount({children}) {
+  
   return (
+    <GeneralDashboard>
     <div className="my_account">
       <div className="user">
         <h3>My Account</h3>
         <p>Gbenga Showunmi</p>
       </div>
-      {/* <ul>
-        <li>Profile Settings</li>
-        <li>2FA: Update Security Question</li>
-        <li>Notification Settings</li>
-        <li>Next of kin Settings</li>
-        <li>Interest Settings</li>
-        <li>Password Settings</li>
-        <li>BVN Settings</li>
-        <li>Update KYC </li>
-      </ul> */}
+      <div className="my_account_container">
+      <div className="left">
       <ul>
-        <Link to= "/dashboard/profile_settings"><li> <i class="fa-regular fa-user"></i> Profile Settings</li></Link>
+        <Link to= "/GeneralDashboard/my_account/profile_settings"><li> <i class="fa-regular fa-user"></i> Profile Settings</li></Link>
         <Link to= "/dashboard/faq"><li>2FA: Update Security Question</li></Link>
 
         <Link to= "/dashboard/notification_settings">
@@ -53,9 +38,12 @@ export default function MyAccount() {
         </Link>
         <Link to= "/dashboard/update_kyc">
         <li><i class="fa-regular fa-pen-to-square"></i> Update KYC </li>
-            
         </Link>
         </ul>
+        </div>
+        <div className="right">{children}</div>
+        </div>
     </div>
+    </GeneralDashboard> 
   );
 }

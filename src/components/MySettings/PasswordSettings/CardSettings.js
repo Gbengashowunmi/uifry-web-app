@@ -1,11 +1,11 @@
 import { Button, TextField } from "@mui/material";
 import React from "react";
-import MyAccount from "../MyAccount";
+import MySettings from "../MySettings";
 import '../PasswordSettings/password.scss'
 
-export default function PasswordSettings() {
+export default function CardSettings() {
   return (
-    <MyAccount>
+    <MySettings>
       <div className="password_settings">
         <h4 className="heading">Change Password</h4>
 
@@ -47,6 +47,6 @@ export default function PasswordSettings() {
           <Button className="button">UPDATE PASSWORD</Button>
         </form>
       </div>
-    </MyAccount>
+    </MySettings>
   );
 }

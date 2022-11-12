@@ -15,7 +15,7 @@ export default function Login() {
       <form className="form">
         <TextField id="standard-basic" label="Username" variant="standard" margin="normal" />
         <TextField id="standard-basic" label="Password" variant="standard" margin="normal" />
-       <Link to='/dashboard/profile_settings'>
+       <Link to='/GeneralDashboard/my_account/profile_settings'>
         <Button className="button">Login</Button>
         </Link>
       </form>

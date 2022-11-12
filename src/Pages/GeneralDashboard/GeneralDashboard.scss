@@ -1,0 +1,68 @@
+@import "../../SassConfig/variables.scss";
+.general_dashboard {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  // column-gap: 2rem;
+  overflow-y: hidden;
+  .left_bar {
+    // border: 2px solid blue;
+    height: 100vh;
+    padding-left: 2rem;
+    background-color: black;
+    color: white;
+    .logo {
+      gap: 1rem;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: fit-content;
+      padding: 2rem;
+      text-align: center;
+      margin: auto;
+      color: white;
+      transition: 0.5s;
+    }
+    .logo:hover {
+      transform: scale(1.1);
+      transition: 0.5s;
+    }
+    .nav {
+      //   border: 2px solid red;
+      margin-top: 1rem;
+    }
+    ul {
+      width: 100%;
+      height: fit-content;
+      padding-left: 1rem;
+      margin-top: 1rem;
+      a{
+        color: white;
+        cursor: pointer;
+      }
+      a:hover{
+        color: $myMainTextColor ;
+      }
+
+      li {
+        list-style: none;
+        // background-color: blue;
+        padding: 1rem 0.5rem;
+      }
+      .icon {
+        color: white;
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+  .dashboard {
+    // border: 2px solid blue;
+    width: 100%;
+    height: 100vh;
+    // overflow-y: scroll;
+  }
+  .red {
+    color: red;
+  }
+}
+

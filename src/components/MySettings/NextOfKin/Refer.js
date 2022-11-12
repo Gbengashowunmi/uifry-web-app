@@ -1,11 +1,11 @@
 import { Button, TextField } from '@mui/material';
 import React from 'react'
-import MyAccount from '../MyAccount';
+import MySettings from '../MySettings';
 import '../NextOfKin/nextOfKin.scss'
 
-export default function NextOfKin() {
+export default function Refer() {
   return (
-    <MyAccount>
+    <MySettings>
         <div className='next_of_kin_settings'>
         <h4 className='heading'>Next of Kin</h4>
         
@@ -57,7 +57,7 @@ export default function NextOfKin() {
 
         </form>
       </div>
-    </MyAccount>
+    </MySettings>
 
   )
 }

@@ -1,12 +1,12 @@
 import { Button } from "@mui/material";
 import React from "react";
 // import Dashboard from "../../../Pages/Dashboard/Dashboard";
-import MyAccount from "../MyAccount";
+import MySettings from "../MySettings";
 import '../NotificationSettings/notification.scss'
 
-export default function NotificationSettings() {
+export default function WithdrawFunds() {
   return (
-    <MyAccount>
+    <MySettings>
       <div className="notification_settings">
         <h4 className="heading">Notification Settings</h4>
         <p>Manage the kind pof messages you get from Uifry.</p>
@@ -20,6 +20,6 @@ export default function NotificationSettings() {
         </div>
         <Button className="button">UPDATE SETTINGS</Button>
       </div>
-    </MyAccount>
+    </MySettings>
   );
 }

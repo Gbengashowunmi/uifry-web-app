@@ -1,12 +1,12 @@
 import { Button, TextField } from "@mui/material";
 import React from "react";
 // import Dashboard from "../../../Pages/Dashboard/Dashboard";
-import MyAccount from "../MyAccount";
+import MySettings from "../MySettings";
 import "../ProfileSettings/profile_settings.scss";
 
-export default function ProfileSettings() {
+export default function ViewLibrary() {
   return (
-    <MyAccount>
+    <MySettings>
       <div className="profile_settings">
         <h4 className="heading">Basic data</h4>
         <p>Change Your Profile Picture</p>
@@ -58,6 +58,6 @@ export default function ProfileSettings() {
           <Button className="button">UPDATE PROFILE</Button>
         </form>
       </div>
-    </MyAccount>
+    </MySettings>
   );
 }
