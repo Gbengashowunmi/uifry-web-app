@@ -1,14 +1,12 @@
 @import '../../../SassConfig/variables';
 
 
-.todays_settings {
+.card_settings {
   padding-top: 1rem;
   background-color: #f6f6f6;
   border-radius: 15px;
   height: 100vh;
   padding-left: 2rem;
-  overflow-y: auto;
-  padding-bottom: 7rem; 
   p{
     font-size: small;
     line-height: 2rem;
@@ -19,15 +17,16 @@
     .form {
       width: 80%;
       margin-bottom: 2rem;
-      .rate_container{
+      .settings{
       margin:2rem 0;
       width: 100%;
       height: fit-content;
-      border: 1px solid black;
+      border: 1 px solid black;
       background-color: white;
-      padding: 1.5rem 1rem;
+      padding: 1rem 1rem;
       h3{
-        color: $myTextColor;
+        font-size:smaller;
+        font-weight: 400;
       }
     }
     p{
@@ -54,7 +53,7 @@
       .button:hover {
         background-color: $myTextColor;
         transition: 0.6s;
-        color:white;
+        color: white;
       }
   // }
 }

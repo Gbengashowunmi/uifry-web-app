@@ -16,11 +16,13 @@ import GeneralDashboard from "./Pages/GeneralDashboard/GeneralDashboard";
 import ProfileSettings from "./components/MyAccount/ProfileSettings/ProfileSettings";
 import TodaysRate from "./components/MySettings/TodaysRate/TodaysRate";
 import SelfHelp from "./components/MySettings/SelfHelp/SelfHelp";
-import Refer from "./components/MySettings/NextOfKin/Refer";
 import WithdrawFunds from "./components/MySettings/Withdraw/WithdrawFunds";
-import CardSettings from "./components/MySettings/CarrdSettings/CardSettings";
+import CardSettings from "./components/MySettings/CardSettings/CardSettings";
 import ViewLibrary from "./components/MySettings/ProfileSettings/ViewLibrary";
 import Contact from "./components/MySettings/SecurityQuestion/Contact";
+import Refer from "./components/MySettings/Refer/Refer";
+import DebitCardSettings from "./components/MySettings/CardSettings/DebitCardSettings";
+import WithdrawBankSettings from "./components/MySettings/CardSettings/WithdrawBankSettings";
 
 function App() {
   return (
@@ -49,6 +51,8 @@ function App() {
         <Route path="/dashboard/refer" element={<Refer />} />
         <Route path="/dashboard/withdraw_funds" element={<WithdrawFunds />} />
         <Route path="/dashboard/card_settings" element={<CardSettings />} />
+        <Route path="/dashboard/DebitCard_settings" element={<DebitCardSettings />} />
+        <Route path="/dashboard/Withdraw_bank_settings" element={<WithdrawBankSettings />} />
         <Route path="/dashboard/library_settings" element={<ViewLibrary/>} />
         <Route path="/dashboard/contact" element={<Contact />} />
       </Routes>

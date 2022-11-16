@@ -1,0 +1,16 @@
+.card_details{
+    width: 60%;
+    height: 4rem;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    border-radius: 5px;
+    .card_content{
+        width: fit-content;
+    }
+    .span{
+        display: flex;
+        justify-content: space-between;
+    }
+}

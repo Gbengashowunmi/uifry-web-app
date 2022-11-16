@@ -37,7 +37,7 @@ export default function MySettings({children}) {
             
         </Link>
         <Link to= "/dashboard/update_kyc">
-        <li><i class="fa-regular fa-pen-to-square"></i> Log Out </li>
+        <li className="red"><i class="fa-regular fa-pen-to-square"></i> Log Out </li>
         </Link>
         </ul>
         </div>

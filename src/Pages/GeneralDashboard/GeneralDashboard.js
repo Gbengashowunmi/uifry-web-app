@@ -14,7 +14,8 @@ export default function GeneralDashboard({children}) {
 
           <ul>
             <li><i class="fa-solid fa-gauge-simple-high"></i> Dashboard</li>
-            <li><i className="fa-solid fa-chart-pie"></i> Analytics</li>
+            <li><i className="fa-solid fa-chart-pie"></i> Savings</li>
+            <li><i className="fa-solid fa-chart-pie"></i> Investment</li>
             <li><i class="fa-solid fa-heart-pulse"></i> Performance</li>
             <Link to="/GeneralDashboard/settings/todays_rate"><li><i className="fa-solid fa-gear"></i> Settings</li></Link>
             <li className="red"> <i className="fa-solid fa-arrow-right-from-bracket"></i> Log Out</li>
