@@ -14,11 +14,11 @@ import NotificationSettings from "./components/MyAccount/NotificationSettings/No
 import UpdateKyc from "./components/MyAccount/UpdateKyc/UpdateKyc"
 import GeneralDashboard from "./Pages/GeneralDashboard/GeneralDashboard";
 import ProfileSettings from "./components/MyAccount/ProfileSettings/ProfileSettings";
-import TodaysRate from "./components/MySettings/BvnSettings/TodasRate";
-import SelfHelp from "./components/MySettings/InterestSettings/SelfHelp";
+import TodaysRate from "./components/MySettings/TodaysRate/TodaysRate";
+import SelfHelp from "./components/MySettings/SelfHelp/SelfHelp";
 import Refer from "./components/MySettings/NextOfKin/Refer";
-import WithdrawFunds from "./components/MySettings/NotificationSettings/WithdrawFunds";
-import CardSettings from "./components/MySettings/PasswordSettings/CardSettings";
+import WithdrawFunds from "./components/MySettings/Withdraw/WithdrawFunds";
+import CardSettings from "./components/MySettings/CarrdSettings/CardSettings";
 import ViewLibrary from "./components/MySettings/ProfileSettings/ViewLibrary";
 import Contact from "./components/MySettings/SecurityQuestion/Contact";
 
