@@ -18,11 +18,13 @@ import TodaysRate from "./components/MySettings/TodaysRate/TodaysRate";
 import SelfHelp from "./components/MySettings/SelfHelp/SelfHelp";
 import WithdrawFunds from "./components/MySettings/Withdraw/WithdrawFunds";
 import CardSettings from "./components/MySettings/CardSettings/CardSettings";
-import ViewLibrary from "./components/MySettings/ProfileSettings/ViewLibrary";
+import ViewLibrary from "./components/MySettings/ViewLibrary/ViewLibrary";
 import Contact from "./components/MySettings/SecurityQuestion/Contact";
 import Refer from "./components/MySettings/Refer/Refer";
 import DebitCardSettings from "./components/MySettings/CardSettings/DebitCardSettings";
 import WithdrawBankSettings from "./components/MySettings/CardSettings/WithdrawBankSettings";
+import WithdrawSettings from "./components/MySettings/CardSettings/WithdrawSettings";
+import Dashboard from "./Pages/Dashboard/Dashboard";
 
 function App() {
   return (
@@ -37,6 +39,7 @@ function App() {
         <Route path="/GeneralDashboard/" element={<GeneralDashboard />} />
         {/* <Route path="/GeneralDashboard/settings" element={<MySettings />} /> */}
         <Route path ="/GeneralDashboard/my_account/profile_settings" element={<ProfileSettings/>}/>
+        <Route path ="/GeneralDashboard/Mydashboard" element={<Dashboard/>}/>
         <Route path="/dashboard/faq" element={<SecurityQuestion/>} />
         <Route path="/dashboard/notification_settings" element={<NotificationSettings/>} />
         <Route path="/dashboard/next-of-kin_settings" element={<NextOfKin />} />
@@ -53,6 +56,7 @@ function App() {
         <Route path="/dashboard/card_settings" element={<CardSettings />} />
         <Route path="/dashboard/DebitCard_settings" element={<DebitCardSettings />} />
         <Route path="/dashboard/Withdraw_bank_settings" element={<WithdrawBankSettings />} />
+        <Route path="/dashboard/Withdraw_settings" element={<WithdrawSettings />} />
         <Route path="/dashboard/library_settings" element={<ViewLibrary/>} />
         <Route path="/dashboard/contact" element={<Contact />} />
       </Routes>

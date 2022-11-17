@@ -1,0 +1,10 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    .input{
+        background-color: white;
+        // border: 2px solid blue;
+        margin-bottom: 2rem;
+        border-radius: 8px 8px 0 0;
+    }
+}

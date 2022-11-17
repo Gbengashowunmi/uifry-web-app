@@ -4,6 +4,8 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 import AuthenticationParent from "../AuthenticationParent";
+import { Formik } from 'formik';
+
 
 export default function Login() {
   return (
@@ -12,13 +14,69 @@ export default function Login() {
 
       <h3>Login</h3>
       <p>Securely login to your Uifry</p>
-      <form className="form">
-        <TextField id="standard-basic" label="Username" variant="standard" margin="normal" />
-        <TextField id="standard-basic" label="Password" variant="standard" margin="normal" />
-       <Link to='/GeneralDashboard/my_account/profile_settings'>
-        <Button className="button">Login</Button>
+      <Formik
+       initialValues={{ email: '', password: '' }}
+       validate={values => {
+         const errors = {};
+         if (!values.email) {
+           errors.email = 'Email or Username Required';
+         } else if (
+           !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
+         ) {
+           errors.email = 'Invalid email address';
+         }
+         else if(!values.password){
+          errors.password = 'Password Required';
+         }
+         return errors;
+       }}
+       onSubmit={(values, { setSubmitting }) => {
+         setTimeout(() => {
+           alert(JSON.stringify(values, null, 2));
+           setSubmitting(false);
+         }, 400);
+       }}
+     >
+       {({
+         values,
+         errors,
+         touched,
+         handleChange,
+         handleBlur,
+         handleSubmit,
+         isSubmitting,
+         /* and other goodies */
+       }) => (
+      <form className="form" onSubmit={handleSubmit}>
+        
+        <TextField id="standard-basic" 
+        label="Username" 
+        variant="standard" 
+        margin="normal"
+        type="email"
+        name="email"
+        onChange={handleChange}
+        onBlur={handleBlur}
+        value={values.email} 
+        />
+        <p className="red">{errors.email && touched.email && errors.email}</p>
+
+        <TextField id="standard-basic" label="Password" variant="standard" margin="normal"
+        type="password"
+        name="password"
+        onChange={handleChange}
+        onBlur={handleBlur}
+        value={values.password}
+        />
+           <p className="red">{errors.password && touched.password && errors.password}</p>
+
+       <Link to='/GeneralDashboard/Mydashboard'>
+        <Button className="button" type="submit" disabled={isSubmitting}>Login</Button>
         </Link>
       </form>
+      
+      )}
+      </Formik>
       <p className="account">
         Don't have an account? 
         <strong>

@@ -1,39 +1,32 @@
-// import React from "react";
-// import { Link } from "react-router-dom";
-// import MyAccount from "../../components/MyAccount/MyAccount";
-// import '../Dashboard/dashboard.scss'
-// import GeneralDashboard from "../GeneralDashboard/GeneralDashboard";
+import React from "react";
+import "./dashboard.scss";
+import GeneralDashboard from "../GeneralDashboard/GeneralDashboard";
 
-// export default function Dashboard({children}) {
-//   return (
-//     <GeneralDashboard>
-//     <div className="dashboard">
-//       <div className="left_bar">
-//         <Link to='/'>
-//         <div className="logo"><img src='/images/uifry_logo.png' alt='logo'/> <h4><strong>Uifry</strong></h4></div>
-//         </Link>
-//         <div className="nav">
-//         <p>MANAGE</p>
+export default function Dashboard() {
+  return (
+    <GeneralDashboard>
+      <div className="dashboard">
+        <div className="head"></div>
+        <div className="dash_main">
+          <div className="left">
+            <div className="boxes">
+              <div className="box"></div>
+              <div className="box"></div>
+              <div className="box"></div>
+            </div>
+            <div className="todo_overview">
+              <div className="box"></div>
+              <div className="box"></div>
+            </div>
+          </div>
 
-//           <ul>
-//             <li><i class="fa-solid fa-gauge-simple-high"></i> Dashboard</li>
-//             <li><i className="fa-solid fa-chart-pie"></i> Analytics</li>
-//             <li><i class="fa-solid fa-heart-pulse"></i> Performance</li>
-//             <li><i className="fa-solid fa-gear"></i> Settings</li>
-//             <li className="red"> <i className="fa-solid fa-arrow-right-from-bracket"></i> Log Out</li>
-//           </ul>
-//         </div>
-//         <div className="nav">
-//           <p>PREFERENCE</p>
-//           <ul>
-//             <li><i class="fa-solid fa-circle-half-stroke"></i> Theme</li>
-//             <li><i class="fa-solid fa-shield-halved"></i> Security</li>
-//           </ul>
-//         </div>
-//       </div>
-//       <MyAccount />
-//       {/* <div className="right_bar">{children}</div> */}
-//     </div>
-//     </GeneralDashboard>
-//   );
-// }
+          <div className="activity"></div>
+        </div>
+
+        <div className="footer"></div>
+        {/* <MyAccount /> */}
+        {/* <div className="right_bar">{children}</div> */}
+      </div>
+    </GeneralDashboard>
+  );
+}

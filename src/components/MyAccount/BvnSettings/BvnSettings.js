@@ -12,7 +12,6 @@ export default function BvnSettings() {
 
         <form>
           <div className="form">
-          <div className="input">
 
           <TextField
                 id="outlined-basic"
@@ -21,9 +20,9 @@ export default function BvnSettings() {
                 size="small"
                 fullWidth
                 margin="normal"
+                className="input"
+
               />
-              </div>
-            <div className="input">
 
           <TextField
                 id="outlined-basic"
@@ -31,10 +30,10 @@ export default function BvnSettings() {
                 variant="outlined"
                 size="small"
                 fullWidth
-                margin="normal"
+                // margin="normal"
+                className="input"
               />
               </div>
-          </div>
 
           <hr />
           <Button className="button">SHOW MY BVN</Button>

@@ -11,7 +11,6 @@ export default function PasswordSettings() {
 
         <form>
           <div className="form">
-            <div className="input">
               <TextField
                 id="outlined-basic"
                 label="Old password"
@@ -19,9 +18,8 @@ export default function PasswordSettings() {
                 size="small"
                 fullWidth
                 margin="normal"
+                className="input"
               />
-            </div>
-            <div className="input">
               <TextField
                 id="outlined-basic"
                 label="New password"
@@ -29,9 +27,8 @@ export default function PasswordSettings() {
                 size="small"
                 fullWidth
                 margin="normal"
+                className="input"
               />
-            </div>
-            <div className="input">
               <TextField
                 id="outlined-basic"
                 label="Retype New password"
@@ -39,8 +36,9 @@ export default function PasswordSettings() {
                 size="small"
                 fullWidth
                 margin="normal"
+                className="input"
+
               />
-            </div>
           </div>
 
           <hr />

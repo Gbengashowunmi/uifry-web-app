@@ -21,7 +21,8 @@
       margin:2rem 0;
       width: 100%;
       height: fit-content;
-      border: 1 px solid black;
+      border: 1px solid black;
+      border-radius:4px 4px 4px 0;
       background-color: white;
       padding: 1rem 1rem;
       h3{
@@ -39,7 +40,19 @@
       border: .1px solid blue;
       margin-bottom: 1rem;
     }
-    .button {
+    .add_button{
+      background-color: $myTextColor !important;
+      color: white !important;
+      margin-bottom: 2rem;
+
+    }
+    .add_button:hover{
+      transition: 0.6s;
+      background-color: white !important;
+      color: $myTextColor !important;
+
+    }
+    .button, .add_button {
         background-color: transparent;
         color: $myTextColor;
         width: 80%;

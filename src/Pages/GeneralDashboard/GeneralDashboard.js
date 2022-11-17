@@ -29,7 +29,7 @@ export default function GeneralDashboard({children}) {
           </ul>
         </div>
       </div>
-      <div className="dashboard">{children}</div>
+      <div className="dashboard_container">{children}</div>
     </div>
   );
 }
