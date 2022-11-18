@@ -27,22 +27,27 @@
         gap: 1rem;
         padding: 2rem 2rem 0 1rem;
         border-radius: 15px;
-
+        .active{
+          background-color: $myTextColor;
+          color: white;
+          border-radius: 8px;
+        }
         li {
           list-style: none;
-          background-color: $myTextColor;
+          // background-color: $myTextColor;
+          border: 1px solid $myTextColor;
 
-          // background-color:white ;
+          background-color:white ;
           padding: 1rem;
           border-radius: 8px;
           cursor: pointer;
           transition: 0.7s;
-          color: white;
+          color: $myTextColor;
         }
         li:hover {
-          background-color: $myMainTextColor;
+          background-color: $myTextColor;
           transition: 0.7s;
-          color: black;
+          color: white;
         }
       }
     }
@@ -54,3 +59,4 @@
     color: red;
   }
 }
+

@@ -3,6 +3,9 @@
   display: grid;
   grid-template-columns: 1fr 3fr;
   // column-gap: 2rem;
+  // border: 2px solid blue;
+  height: 100vh;
+
   overflow-y: hidden;
   .left_bar {
     // border: 2px solid blue;
@@ -35,12 +38,15 @@
       height: fit-content;
       padding-left: 1rem;
       margin-top: 1rem;
-      a{
+      a {
         color: white;
         cursor: pointer;
       }
-      a:hover{
-        color: $myMainTextColor ;
+      a:hover {
+        color: $myMainTextColor;
+      }
+      .blue {
+        color: $myTextColor;
       }
 
       li {
@@ -55,6 +61,7 @@
       }
     }
   }
+
   .dashboard_container {
     // border: 2px solid blue;
     width: 100%;
@@ -65,3 +72,12 @@
   }
 }
 
+@media (max-width: 900px) {
+  // .left_bar {
+  //   transform: translateX(-100%);
+  //   border: 2px solid blue;
+  // }
+  // .left_bar_hide{
+  //   transform: translateX(0);
+  // }
+}

@@ -1,0 +1,99 @@
+@import "../../SassConfig/variables.scss";
+
+.savings {
+  width: 100%;
+  height: 100vh;
+  padding: 1rem 3rem;
+  overflow-y: scroll;
+  p {
+    font-size: small;
+  }
+  .balance {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 1rem;
+    justify-content: center;
+    margin: 2rem 0;
+    border: 1px solid $myTextColor;
+    border-radius: 8px;
+    h1 {
+      color: $myTextColor;
+      font-size: 3rem;
+    }
+    p {
+      font-weight: 800;
+    }
+  }
+  .savings_container {
+    p {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    .savings_action {
+      padding-top: 1rem;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 2rem;
+      p {
+        font-size: 1rem;
+        font-weight: 400;
+      }
+      .flex,
+      .fixed,
+      .targets,
+      .auto_save,
+      .flex_dollar,
+      .flex_pounds {
+        width: 80%;
+        height: 12rem;
+        padding: 2rem;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        h3 {
+          font-size: 2rem;
+        }
+      }
+      .flex {
+        background-color: #ffeaf5;
+        h3 {
+          color: #e7439c;
+        }
+      }
+      .fixed {
+        background-color: #e7f6ff;
+        h3 {
+          color: #2295f2;
+        }
+      }
+      .auto_save {
+        background-color: #ccf0fe;
+        h3 {
+          color: #4044ed;
+        }
+      }
+      .flex_dollar {
+        background-color: #d9d9d9;
+      }
+      .flex_pounds {
+        background-color: #ffeaf5;
+        h3 {
+          color: #c11f1f;
+          font-size: 2rem;
+        }
+      }
+      .targets {
+        background-color: #dcffeb;
+        h3 {
+          color: #27ae8d;
+        }
+      }
+    }
+  }
+}

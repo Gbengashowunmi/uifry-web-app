@@ -25,6 +25,8 @@ import DebitCardSettings from "./components/MySettings/CardSettings/DebitCardSet
 import WithdrawBankSettings from "./components/MySettings/CardSettings/WithdrawBankSettings";
 import WithdrawSettings from "./components/MySettings/CardSettings/WithdrawSettings";
 import Dashboard from "./Pages/Dashboard/Dashboard";
+import ErroPage from "./Pages/ErrorPage/ErroPage";
+import Savings from "./components/Savings/Savings";
 
 function App() {
   return (
@@ -49,7 +51,10 @@ function App() {
         <Route path="/dashboard/update_kyc" element={<UpdateKyc />} />
 
         {/* //settings */}
-        <Route path ="/GeneralDashboard/settings/todays_rate" element={<TodaysRate/>}/>
+        <Route path ="/GeneralDashboard/settings/todays_rate" element={<TodaysRate/>}>
+          
+        </Route>
+        
         <Route path="/dashboard/selfhelp" element={<SelfHelp />} />
         <Route path="/dashboard/refer" element={<Refer />} />
         <Route path="/dashboard/withdraw_funds" element={<WithdrawFunds />} />
@@ -59,6 +64,12 @@ function App() {
         <Route path="/dashboard/Withdraw_settings" element={<WithdrawSettings />} />
         <Route path="/dashboard/library_settings" element={<ViewLibrary/>} />
         <Route path="/dashboard/contact" element={<Contact />} />
+        <Route path="*" element={<ErroPage />} />
+
+        {/* //Savings */}
+        <Route path ="/GeneralDashboard/settings/savings" element={<Savings/>}/>
+
+
       </Routes>
     </div>
   );
