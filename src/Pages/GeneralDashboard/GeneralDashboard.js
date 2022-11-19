@@ -59,12 +59,9 @@ export default function GeneralDashboard({ children }) {
             <li>
               <i class="fa-solid fa-circle-half-stroke"></i> Theme
             </li>
-            <li>
-              <i class="fa-solid fa-shield-halved"></i> Security
-            </li>
           </ul>
         </div>
-      </div>
+      </div> 
       <div className="dashboard_container">{children}</div>
     </div>
   );

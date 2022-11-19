@@ -17,7 +17,7 @@ export default function Savings() {
         <div className="savings_container">
           <p>BUILD YOUR SAVINGS</p>
           <div className="savings_action">
-           <Link to=''> <div className="flex">
+           <Link to='/GeneralDashboard/settings/savings/flex'> <div className="flex">
               <h3>Flex</h3>
               <p>
                 Flexible savings for emergencies. Free transfer, withdrawals etc

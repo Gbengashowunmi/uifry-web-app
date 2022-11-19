@@ -2,7 +2,7 @@ import React from "react";
 import Button from "@mui/material/Button";
 import "./Header.scss";
 import { Link } from "react-router-dom";
-import Navbar from "../NavBar.js/Navbar";
+import Navbar from "../NavBar/Navbar";
 
 export default function Header() {
 

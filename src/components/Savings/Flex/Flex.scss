@@ -1,0 +1,129 @@
+.flex {
+  height: 100%;
+  //   border: 2px solid red;
+  h3 {
+    font-size: 2rem;
+    color: #e7439c;
+    // margin-left: 2rem;
+  }
+  ul {
+    display: flex;
+    border-bottom: 1px solid black;
+    list-style: none;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding: 0 2rem 0.5rem 2rem;
+    li {
+      // margin-right: 1rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+  }
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 2rem;
+    margin: 2rem;
+    height: 75%;
+    // border: 2px solid red;
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: space-between;
+
+      .top {
+        height: 35%;
+        width: 100%;
+        border: 1px solid #e7439c;
+        border-radius: 8px;
+        p{
+            font-size: smaller;
+        }
+        .up {
+        //   border: 1px solid red;
+          height: fit-content;
+          font-size: 80%;
+          text-align: left;
+          margin-left: 2rem;
+          padding: 2px 2px;
+          align-items: center;
+          justify-content: center;
+        }
+        .mid {
+          border: 1px solid #e7439c;
+          display: flex;
+          height: 20%;
+          align-items: center;
+          justify-content: space-evenly;
+          hr {
+            border: 1px solid #e7439c;
+            height: 100%;
+          }
+        }
+        .down {
+          height: 35%;
+          display: flex;
+          align-items: center;
+          .down_left,
+          .down_right {
+            width: 40%;
+            border: 1px solid #e7439c;
+            padding-left: 1rem;
+            text-align: left;
+            border-radius: 8px;
+            margin: auto;
+          }
+        }
+      }
+      .bottom {
+        overflow-y: auto;
+        height: 55%;
+        width: 100%;
+        border: 1px solid #e7439c;
+        border-radius: 8px;
+        .heading_btns{
+            padding-left: 2rem;
+            padding-top: 10px;
+            .btns >button{
+                margin-right: 10px;
+                padding: 1px 5px;
+            }
+        }
+        p{
+            font-size: smaller;
+        }
+        .transaction_details{
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid grey;
+            padding: 5px 10px;
+            .transaction_container{
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                gap: 10px;
+            }
+        }
+        .view_more{
+            background-color: transparent;
+            color: #e7439c;
+            border: none;
+            text-align: center;
+            width: 100%;
+            margin-top: 30px;
+        }
+      }
+    }
+    .right {
+      border: 1px solid #e7439c;
+      height: fit-content;
+      border-radius: 8px;
+      //   padding: 2rem;
+    }
+  }
+}

@@ -60,3 +60,78 @@
   }
 }
 
+
+@media (max-width:1100px) {
+  .my_account {
+    border: 2px solid blue;
+  
+    .user {
+      background-color: red;
+      margin: 0 0 0.5rem 1rem;
+      h3 {
+        font-size: 3vw;
+      }
+    }
+    .my_account_container {
+      display: grid;
+      height: 100vh;
+      grid-template-columns: 1fr;
+      column-gap: 2rem;
+    overflow-y: scroll;
+    position: relative;
+
+      // border: 2px solid red;
+      .left {
+        border: 2px solid blue;
+  
+        ul {
+          background-color: #f6f6f6;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          gap: 1rem;
+          padding: 2rem 2rem 0 1rem;
+          border-radius: 15px;
+          .active{
+            background-color: $myTextColor;
+            color: white;
+            border-radius: 8px;
+          }
+          li {
+            list-style: none;
+            // background-color: $myTextColor;
+            border: 1px solid $myTextColor;
+  
+            background-color:white ;
+            padding: 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.7s;
+            color: $myTextColor;
+          }
+          li:hover {
+            background-color: $myTextColor;
+            transition: 0.7s;
+            color: white;
+          }
+        }
+      }
+      .right {
+        height: 100vh;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translate(0%);
+        transition: .8s;
+        width: 50%;
+        // overflow-y: auto;
+      }
+
+      .right_active{
+        transform: translate(0%);
+        transition: .8s;
+
+      }
+    }
+  }
+}

@@ -27,8 +27,12 @@ import WithdrawSettings from "./components/MySettings/CardSettings/WithdrawSetti
 import Dashboard from "./Pages/Dashboard/Dashboard";
 import ErroPage from "./Pages/ErrorPage/ErroPage";
 import Savings from "./components/Savings/Savings";
+import Flex from "./components/Savings/Flex/Flex";
+// import ReactSlideRoutes from "react-slide-routes";
 
 function App() {
+  // const location = useLocation();
+
   return (
     <div className="App">
       <Routes>
@@ -38,6 +42,7 @@ function App() {
         <Route path="forgot_password" element={<ForgotPassword />} />
 
         {/* Accont settings */}
+{/* <ReactSlideRoutes location={location}> */}
         <Route path="/GeneralDashboard/" element={<GeneralDashboard />} />
         {/* <Route path="/GeneralDashboard/settings" element={<MySettings />} /> */}
         <Route path ="/GeneralDashboard/my_account/profile_settings" element={<ProfileSettings/>}/>
@@ -49,7 +54,7 @@ function App() {
         <Route path="/dashboard/password_settings" element={<PasswordSettings />} />
         <Route path="/dashboard/bvn_settings" element={<BvnSettings />} />
         <Route path="/dashboard/update_kyc" element={<UpdateKyc />} />
-
+        {/* </ReactSlideRoutes> */}
         {/* //settings */}
         <Route path ="/GeneralDashboard/settings/todays_rate" element={<TodaysRate/>}>
           
@@ -68,6 +73,9 @@ function App() {
 
         {/* //Savings */}
         <Route path ="/GeneralDashboard/settings/savings" element={<Savings/>}/>
+        <Route path ="/GeneralDashboard/settings/savings/flex" element={<Flex/>}/>
+
+
 
 
       </Routes>
