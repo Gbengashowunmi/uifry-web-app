@@ -1,5 +1,6 @@
 import { Button } from "@mui/material";
 import React from "react";
+import AnimatedPage from "../../AnimatedPage";
 // import Dashboard from "../../../Pages/Dashboard/Dashboard";
 import MySettings from "../MySettings";
 import "./profile_settings.scss";
@@ -7,6 +8,8 @@ import "./profile_settings.scss";
 export default function ViewLibrary() {
   return (
     <MySettings>
+      <AnimatedPage>
+
       <div className="selfHelp_settings">
         <h4 className="heading">Uifry Library</h4>
         <p>Learn a few things about Uifry</p>
@@ -35,6 +38,7 @@ export default function ViewLibrary() {
         <hr />
         <Button className="button">CLOSE</Button>
       </div>
+      </AnimatedPage>
     </MySettings>
   );
 }

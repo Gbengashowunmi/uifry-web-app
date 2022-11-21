@@ -1,12 +1,14 @@
 import { Button } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
+import AnimatedPage from "../../AnimatedPage";
 import MySettings from "../MySettings";
 import "./card.scss";
 
 export default function Debit() {
   return (
     <MySettings>
+      <AnimatedPage>
         <div className="card_settings">
           <h4 className="heading">Manage Card & Bank Settings</h4>
           <p>Fix some of your account issues. More options coming soon</p>
@@ -30,7 +32,7 @@ export default function Debit() {
           <hr />
           <Button className="button">CLOSE</Button>
         </div>
-      
+        </AnimatedPage>
     </MySettings>
   );
 }

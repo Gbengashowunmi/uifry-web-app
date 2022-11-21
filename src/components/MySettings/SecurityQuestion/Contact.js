@@ -1,11 +1,13 @@
 import { Button, TextField } from "@mui/material";
 import React from "react";
+import AnimatedPage from "../../AnimatedPage";
 import MySettings from "../MySettings";
 import '../SecurityQuestion/security.scss'
 
 export default function Contact() {
   return (
     <MySettings>
+    <AnimatedPage>
       <div className="security_settings">
         <h4 className="heading">Set new security question</h4>
         <p>Set a new security question to protect your PiggyVest account.</p>
@@ -70,6 +72,7 @@ export default function Contact() {
 
         </form>
       </div>
+      </AnimatedPage>
     </MySettings>
   );
 }

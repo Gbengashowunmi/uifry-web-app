@@ -1,24 +1,18 @@
 import { Button, TextField } from "@mui/material";
 import React from "react";
+import AnimatedPage from "../../AnimatedPage";
 import MyAccount from "../MyAccount";
 import '../SecurityQuestion/security.scss'
+import OtpInsturction from "./OtpInsturction";
 
 export default function SecurityQuestion() {
   return (
     <MyAccount>
+      <AnimatedPage>
       <div className="security_settings">
         <h4 className="heading">Set new security question</h4>
         <p>Set a new security question to protect your PiggyVest account.</p>
-        <div className="deet_container">
-          <div>
-            <i class="fa-light fa-shield-check"></i>
-          </div>
-          <h6>2FA: TAP TO GENERATEOTP!</h6>
-          <p>
-            2FA is required to complete this processfor your own safety. Please
-            tap to geenrate OTP then come back to proceed.
-          </p>
-        </div>
+        <OtpInsturction/>
         <form>
         <div className="form">
           <TextField
@@ -70,6 +64,7 @@ export default function SecurityQuestion() {
 
         </form>
       </div>
+      </AnimatedPage>
     </MyAccount>
   );
 }

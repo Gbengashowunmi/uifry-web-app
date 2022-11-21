@@ -2,10 +2,13 @@ import { Button } from "@mui/material";
 import React from "react";
 import '../SelfHelp/selfHelp.scss'
 import MySettings from "../MySettings";
+import AnimatedPage from "../../AnimatedPage";
 
 export default function TodaysRate() {
   return (
     <MySettings> 
+    <AnimatedPage>
+
       <div className="selfHelp_settings">
         <h4 className="heading">Uifry Self Help</h4>
         <p>Fix some of your account issues. More options coming soon</p>
@@ -47,6 +50,7 @@ export default function TodaysRate() {
           <hr />
           <Button className="button">CLOSE</Button>
       </div>
+    </AnimatedPage>
     </MySettings>
   );
 }

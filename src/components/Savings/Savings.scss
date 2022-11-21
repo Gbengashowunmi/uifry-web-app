@@ -38,8 +38,10 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       row-gap: 2rem;
+      column-gap: 1rem;
+
       p {
-        font-size: 1rem;
+        font-size: 1vw;
         font-weight: 400;
       }
       .flex,
@@ -48,9 +50,11 @@
       .auto_save,
       .flex_dollar,
       .flex_pounds {
-        width: 80%;
+        width: 100%;
         height: 12rem;
-        padding: 2rem;
+        padding: 20px;
+
+        // padding: 2rem;
         border-radius: 8px;
         display: flex;
         flex-direction: column;
@@ -93,6 +97,42 @@
         h3 {
           color: #27ae8d;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .savings {
+    width: 100%;
+    padding: 1rem 1rem 4rem 1rem;
+
+    .balance {
+      width: 100%;
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+    .savings_container {
+      .savings_action {
+        p {
+          font-size: 80%;
+        }
+        .flex,
+        .fixed,
+        .targets,
+        .auto_save,
+        .flex_dollar,
+        .flex_pounds {
+          padding: 10px;
+          border-radius: 8px;
+          h3 {
+            font-size: 150%;
+          }
+        }
+
+
+        
       }
     }
   }

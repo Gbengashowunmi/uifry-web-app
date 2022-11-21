@@ -1,11 +1,13 @@
 import { Button } from "@mui/material";
 import React from "react";
+import AnimatedPage from "../../AnimatedPage";
 import MySettings from "../MySettings";
 import "../WithdrawDebitComponent/notification.scss";
 
 export default function WithdrawDebitComponent() {
   return (
     <MySettings>
+      <AnimatedPage>
       <div className="notification_settings">
         <h4 className="heading">Notification Settings</h4>
         <p>Manage the kind pof messages you get from Uifry.</p>
@@ -19,6 +21,7 @@ export default function WithdrawDebitComponent() {
         </div>
         <Button className="button">UPDATE SETTINGS</Button>
       </div>
+      </AnimatedPage>
     </MySettings>
   );
 }

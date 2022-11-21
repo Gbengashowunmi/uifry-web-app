@@ -60,7 +60,36 @@ export default function Dashboard() {
           <div className="activity"></div>
         </div>
 
-        <div className="footer"></div>
+        <div className="footer">
+          <p><strong>Transaction History</strong></p>
+        <div className="transaction_details">
+                <div className="transaction_container">
+                  <img src="/images/red.png" alt="red" />
+                  <div className="transaction_action">
+                    <p>
+                      <strong>Withdrawal Made to FCMB acct</strong>
+                    </p>
+                  </div>
+                </div>
+                <p>Sat, 27 Nov 2021 07:06:00 GMT</p>
+
+                <p className="amount">₦900.32</p> 
+              </div>
+              <div className="transaction_details">
+                <div className="transaction_container">
+                  <img src="/images/green.png" alt="green" />
+
+                  <div className="transaction_action">
+                    <p>
+                      <strong>Transfer From Gbenga Showunmi</strong>
+                    </p>
+                  </div>
+                </div>
+                <p>Sat, 27 Nov 2021 07:06:00 GMT</p>
+
+                <p className="amount">₦900.32</p>
+              </div>
+        </div>
         {/* <MyAccount /> */}
         {/* <div className="right_bar">{children}</div> */}
       </div>

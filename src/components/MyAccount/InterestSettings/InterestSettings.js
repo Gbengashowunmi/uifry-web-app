@@ -1,11 +1,13 @@
 import { Button } from '@mui/material';
 import React from 'react'
+import AnimatedPage from '../../AnimatedPage';
 import '../InterestSettings/interest.scss'
 import MyAccount from '../MyAccount';
 
 export default function InterestSettings() {
   return (
     <MyAccount>
+      <AnimatedPage>
         <div className='interest_settings'>
         <h4 className='heading'>Interest Settings</h4>
         <p>You can enable or disable interest on your Uifry.</p>
@@ -19,6 +21,7 @@ export default function InterestSettings() {
         </div>
         <Button className="button">UPDATE SETTINGS</Button>
       </div>
+      </AnimatedPage>
     </MyAccount>
   )
 }

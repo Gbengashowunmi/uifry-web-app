@@ -1,11 +1,13 @@
 import { Button } from "@mui/material";
 import React from "react";
+import AnimatedPage from "../../AnimatedPage";
 import MySettings from "../MySettings";
 import "./refer.scss";
 
 export default function Refer() {
   return (
     <MySettings>
+      <AnimatedPage>
       <div className="refer">
         <h5 className="center">My Referal Earnings</h5>
         <h4 className="heading">#2,000.00</h4>
@@ -53,6 +55,7 @@ export default function Refer() {
         <hr />
         <Button className="button">CLOSE</Button>
       </div>
+    </AnimatedPage>
     </MySettings>
   );
 }

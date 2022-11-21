@@ -1,11 +1,13 @@
 import { Button, TextField } from '@mui/material';
 import React from 'react'
+import AnimatedPage from '../../AnimatedPage';
 import MyAccount from '../MyAccount';
 import '../NextOfKin/nextOfKin.scss'
 
 export default function NextOfKin() {
   return (
     <MyAccount>
+      <AnimatedPage>
         <div className='next_of_kin_settings'>
         <h4 className='heading'>Next of Kin</h4>
         
@@ -57,6 +59,7 @@ export default function NextOfKin() {
 
         </form>
       </div>
+      </AnimatedPage>
     </MyAccount>
 
   )

@@ -17,10 +17,9 @@ export default function MySettings({ children }) {
               <NavLink to="/GeneralDashboard/settings/todays_rate">
                 {({ isActive }) => (
                   <li className={isActive ? "active" : ""}>
-                    {" "}
                     <i class="fa-regular fa-user"></i> Today's Rate
                   </li>
-                )}
+                )} 
               </NavLink>
               <NavLink to="/dashboard/selfhelp">
                 {({ isActive }) => (
@@ -39,7 +38,6 @@ export default function MySettings({ children }) {
               <NavLink to="/dashboard/withdraw_funds">
                 {({ isActive }) => (
                   <li className={isActive ? "active" : ""}>
-                    {" "}
                     <i class="fa-solid fa-user-group"></i> Withdraw funds
                   </li>
                 )}

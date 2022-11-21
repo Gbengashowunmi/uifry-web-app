@@ -1,31 +1,22 @@
-// import { Link } from '@mui/material';
-import { Button, TextField } from "@mui/material";
+import { Link } from "react-router-dom";
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
 import GeneralDashboard from "../../../Pages/GeneralDashboard/GeneralDashboard";
-import TransitionsModal from "../../Modal";
-import OtpInsturction from "../../MyAccount/SecurityQuestion/OtpInsturction";
-import "./Flex.scss";
-
-export default function Flex() {
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+import "./FlexPounds.scss";
+export default function FlexPounds() {
   return (
     <GeneralDashboard>
       <div className="flex">
-        <h3 className="lp">Flex</h3>
+        <h3 className="lp">Flex Pounds</h3>
+
         <ul>
-          <NavLink to="/GeneralDashboard/settings/savings/flex">
+          <Link to="/GeneralDashboard/settings/savings/flex">
             <li>
               <img src="/images/flex_icon.png" alt="flex" />
               Flex
             </li>
-          </NavLink>
+          </Link>
           <Link to="/GeneralDashboard/settings/savings/fixed">
-            {" "}
             <li>
-              {" "}
               <img src="/images/flex_icon.png" alt="fixed" />
               Fixed
             </li>
@@ -48,7 +39,6 @@ export default function Flex() {
             </li>
           </Link>
           <Link to="/GeneralDashboard/settings/savings/flex_pounds">
-            {" "}
             <li>
               <img src="/images/flex_icon.png" alt="flex" />
               Flex Pounds
@@ -67,7 +57,7 @@ export default function Flex() {
                 </p>
               </div>
 
-              <div className="mid" onClick={handleOpen}>
+              <div className="mid">
                 <p>New Label</p>
                 <hr />
                 <p>Withdrawal</p>
@@ -80,7 +70,7 @@ export default function Flex() {
                     <strong>₦0.03</strong> at (8% p.a)
                   </p>
                 </div>
-                <div className="down_right" >
+                <div className="down_right">
                   <p>withdrawals</p>
                   <p>
                     <strong>0</strong>this month
@@ -154,27 +144,6 @@ export default function Flex() {
             </p>
           </div>
         </main>
-        <TransitionsModal
-          open={open}
-          handleClose={handleClose}
-          handleOpen={handleOpen}
-        >
-          <div>
-            <h3>Withdraw to your Pocket</h3>
-            <p>Available Flex Balance is:#23,489</p>
-            <h3>Use the for belowto withdraw from your flex savings  instantly.</h3>
-        <OtpInsturction/>
-          <div>
-          <TextField id="filled-basic" label="Amount to withdraw (min:#2,000)" variant="filled" />
-          <TextField id="filled-basic" label="Please Enter Generated OTP" variant="filled" />
-          <TextField id="filled-basic" label="For security reasons, Enter password" variant="filled" />
-
-          </div> 
-          <Button className="button">WITHDRAW NOW</Button>
-          <Button className="button"  onClick={handleClose}>CANCEL</Button>
-
-          </div>
-        </TransitionsModal>
       </div>
     </GeneralDashboard>
   );

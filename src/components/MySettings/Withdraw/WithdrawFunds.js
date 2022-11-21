@@ -1,11 +1,13 @@
 import { Button } from "@mui/material";
 import React from "react";
+import AnimatedPage from "../../AnimatedPage";
 import MySettings from "../MySettings";
 import "./withdraw.scss";
 
 export default function WithdrawFunds() {
   return (
     <MySettings>
+      <AnimatedPage>
       <div className="withdraw">
         <h3>SELECT A WALLET TO WITHDRAW FROM</h3>
 
@@ -31,6 +33,7 @@ export default function WithdrawFunds() {
         <hr />
         <Button className="button">CLOSE</Button>
       </div>
+      </AnimatedPage>
     </MySettings>
   );
 }

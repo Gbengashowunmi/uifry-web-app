@@ -2,10 +2,12 @@ import { Button } from "@mui/material";
 import React from "react";
 import "../TodaysRate/todaysrate.scss";
 import MySettings from "../MySettings";
+import AnimatedPage from "../../AnimatedPage";
 
 export default function TodaysRate() {
   return (
     <MySettings>
+    <AnimatedPage>
       <div className="todays_settings">
         <h4 className="heading">Today's Rate</h4>
         <p>November 14th by 09:09Am (Lagos).</p>
@@ -38,6 +40,7 @@ export default function TodaysRate() {
         <hr />
         <Button className="button">CLOSE</Button>
       </div>
+      </AnimatedPage>
     </MySettings>
   );
 }

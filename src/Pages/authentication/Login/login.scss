@@ -54,52 +54,42 @@ a:hover {
   transition: 0.5s;
 }
 
-// @media (max-width: 790px) {
-//   .login_signup_forgot_password{
-//     width: 50%;
-//     height: 100%;
-//     // border: 2px solid blue;
-//     margin: auto;
-//     text-align: center;
-//     margin-top: 10%;
-//     .red{
-//       color: red;
-//     }
-// h3{
-//   font-size: 3vw;
-// }
+@media (max-width: 790px) {
+  .login_signup_forgot_password{
 
-//     .form{
-//         width: 50%;
-//         height: fit-content;
-//         margin: auto;
-//         display: flex;
-//         flex-direction: column;
-//     border: 2px solid green;
+h3{
+  font-size: 10vw;
+}
 
-//         margin-bottom: 1.5rem ;
-//         // margin-top: 1rem;
+    .form{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
 
-//         .button {
-//             background-color: $myTextColor;
-//             color: white;
-//             font-weight: bolder;
-//             padding: 0.5rem 1rem;
-//             transition: 0.6s;
-//             border-radius: 4px;
-//             margin-top: 2rem;
-//           }
-//           .button:hover {
-//             background-color: $myMainTextColor;
-//             transition: 0.6s;
-//           }
+        margin-bottom: 1.5rem ;
+        // margin-top: 1rem;
 
-//     }
-//     .account{
-//         color: $myFaintTextColor;
-//         margin-bottom: 1rem ;
+        .button {
+            background-color: $myTextColor;
+            color: white;
+            font-weight: bolder;
+            padding: 0.5rem 1rem;
+            transition: 0.6s;
+            border-radius: 4px;
+            margin-top: 2rem;
+          }
+          .button:hover {
+            background-color: $myMainTextColor;
+            transition: 0.6s;
+          }
 
-//       }
-// }
+    }
+    .account{
+        color: $myFaintTextColor;
+        margin-bottom: 1rem ;
 
-// }
+      }
+}
+
+}

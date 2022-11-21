@@ -26,7 +26,7 @@ export default function Savings() {
               <h3>#92,000.00</h3>
             </div>
             </Link>
-            <div className="fixed">
+            <Link to='/GeneralDashboard/settings/savings/fixed'><div className="fixed">
               <h3>Fixed</h3>
               <p>
                 Flexible savings for emergencies. Free transfer, withdrawals etc
@@ -34,6 +34,7 @@ export default function Savings() {
               </p>
               <h3>#122,400.00</h3>
             </div>
+            </Link>
             <div className="auto_save">
               <h3>AutoSave</h3>
               <p>
