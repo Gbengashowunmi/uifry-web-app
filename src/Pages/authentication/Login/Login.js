@@ -8,34 +8,41 @@ import { Formik } from 'formik';
 
 
 export default function Login() {
+
+  //validate form
+  const validate = values => {
+    const errors = {};
+    if (!values.email) {
+      errors.email = 'Email or Username Required';
+    } else if (
+      !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
+    ) {
+      errors.email = 'Invalid email address';
+    }
+    else if(!values.password){
+     errors.password = 'Password Required';
+    }
+    return errors;
+  }
+
+  //handle form submit
+  const onSubmit= (values, { setSubmitting }) => {
+    setTimeout(() => {
+      alert(JSON.stringify(values, null, 2));
+      setSubmitting(false);
+    }, 400);
+  }
+
+
   return (
     <AuthenticationParent>
     <div className="login_signup_forgot_password">
-
       <h3>Login</h3>
       <p>Securely login to your Uifry</p>
       <Formik
        initialValues={{ email: '', password: '' }}
-       validate={values => {
-         const errors = {};
-         if (!values.email) {
-           errors.email = 'Email or Username Required';
-         } else if (
-           !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
-         ) {
-           errors.email = 'Invalid email address';
-         }
-         else if(!values.password){
-          errors.password = 'Password Required';
-         }
-         return errors;
-       }}
-       onSubmit={(values, { setSubmitting }) => {
-         setTimeout(() => {
-           alert(JSON.stringify(values, null, 2));
-           setSubmitting(false);
-         }, 400);
-       }}
+       validate={validate}
+       onSubmit={onSubmit}
      >
        {({
          values,
